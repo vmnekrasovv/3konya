@@ -11,4 +11,10 @@
 }
 
 
-@include font('Font', normal, normal, '../fonts/Font/Font.woff2');
+@include font('OpenSans', italic, 200, '../fonts/OpenSans/OpenSans-LightItalic.woff2');
+@include font('OpenSans', normal, 400, '../fonts/OpenSans/OpenSans-Regular.woff2');
+
+@include font('Oswald', normal, 200, '../fonts/Oswald/Oswald-Light.woff2');
+@include font('Oswald', normal, 500, '../fonts/Oswald/Oswald-Medium.woff2');
+@include font('Oswald', normal, 700, '../fonts/Oswald/Oswald-Bold.woff2');
+@include font('Oswald', normal, 900, '../fonts/Oswald/Oswald-Heavy.woff2');

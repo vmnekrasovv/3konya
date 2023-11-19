@@ -1,0 +1,186 @@
+
+.header {
+
+}
+
+.navbar {
+
+	&__container {
+		max-width: 1200px;
+		padding: 20px 15px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		gap: 50px;
+	}
+
+	&__left {
+		flex-basis: 80px;
+	}
+
+	&__center {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		flex-basis: 680px;
+	}
+
+	&__right {
+		flex-basis: 300px;
+	}
+
+	&__logo {
+		width: 78px;
+		height: 67px;
+		display: block;
+		text-decoration: none;
+
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+			object-fit: cover;
+			object-position: center;
+		}
+	}
+
+	&__phones {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		padding-left: 43px;
+
+		&:before {
+			width: 30px;
+			height: 30px;
+			display: block;
+			content: '';
+			position: absolute;
+			top: 1px;
+			left: -5px;
+			background-image: url('../images/dest/icons/phone_colored.svg');
+  			background-size: 30px 30px;	
+		}
+	}
+
+	&__phone {
+		margin-top: -7px;
+		text-decoration: none;
+		font-family: 'Oswald';
+		font-weight: 500;
+		font-size: 20px;
+		color: $color_39;
+	}
+
+	&-menu {
+		padding-top: 12px;
+		display: flex;
+		justify-content: space-between;
+
+		&__link {
+			font-family: 'Oswald';
+			font-weight: 500;
+			font-size: 18px;
+			color: $color_47;
+			text-decoration: none;
+			padding-bottom: 1px;
+			border-bottom: 1px solid transparent;
+			transition: .2s;
+
+			&:hover {
+				border-bottom: 1px solid #47b1ea;
+			}
+		}
+	} // menu
+
+	&__address {
+		position: relative;
+		padding-left: 40px;
+		margin-bottom: 8px;
+
+		font-family: 'OpenSans';
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 20px;
+		color: $color_39;
+
+		&:before {
+			display: block;
+			content: '';
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 1px;
+			left: 0;
+			background-image: url('../images/dest/icons/location_colored.svg');
+			background-size: 30px 30px;
+		}
+	} // header__address
+
+	.navbar__registry {
+		text-align: right;
+		font-family: 'Oswald';
+		font-weight: 500;
+		font-size: 16px;
+		color: $color_39;
+	}
+
+} // navbar
+
+
+.header-menu {
+
+	&.active {
+		top: 0;
+	}
+	
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	@media screen and (max-width: 767px) {
+
+	    position: fixed;
+	    top: -110vh;
+	    left: 0;
+	    width: 100%;
+	    height: 110vh;
+	    overflow: auto;
+	    padding: 80px 10px 80px 5px;
+	    background-color: #222;
+	    -webkit-transition: .3s;
+	    transition: .3s;
+	    z-index: 1;
+    	flex-direction: column;
+
+	}
+
+	&__link {
+		padding: 10px;
+		font-size: 15px;
+		color: #171717;
+		text-decoration: none;
+
+		@media screen and (max-width: 767px) {
+			color: #fff;
+			font-size: 20px;
+			width: 100%;
+		    text-align: center;
+		    border-bottom: 1px solid #333;
+		    padding-bottom: 30px;
+		}
+		
+
+		&:last-child {
+			padding-right: 0;
+
+			@media screen and (max-width: 767px) {
+				border-bottom: none;
+			}
+		}
+
+		&.active {
+			color: #C9A96E;
+		}
+	}
+}
