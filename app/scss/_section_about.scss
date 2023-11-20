@@ -1,0 +1,105 @@
+.section-about {
+	padding-top: 30px;
+
+	.section__title::before {
+		content: 'О клубе';
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+
+	.section__left {
+		max-width: 555px;
+	}
+
+	.section__right {
+		max-width: 555px;
+	}
+
+	&__text {
+		font-family: 'Open Sans';
+		font-size: 24px;
+		line-height: 36px;
+		color: $color_39;
+		margin-bottom: 35px;
+	}
+
+	.read-more {
+		color: $color_47;
+		font-family: 'Open Sans';
+		font-size: 24px;
+		text-decoration: none;
+	}
+
+	.about-list {
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 80px;
+		display: flex;
+		gap: 50px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+
+		&__item {
+			position: relative;
+			max-width: 555px;
+			padding-left: 80px;
+
+			&::before {
+				position: absolute;
+				top: 10px;
+				left: 0;
+				display: block;
+				content: '';
+			}
+
+			&.item-tourist::before {
+				width: 61px;
+				height: 65px;
+				background: url('../images/dest/icons/tourist_colored.svg');
+				background-size: 61px 65px;
+			}
+
+			&.item-map::before {
+				width: 63px;
+				height: 65px;
+				background: url('../images/dest/icons/map_colored.svg');
+				background-size: 63px 65px;
+			}
+
+			&.item-travel-money::before {
+				width: 65px;
+				height: 65px;
+				background: url('../images/dest/icons/travel_money_colored.svg');
+				background-size: 65px 65px;
+			}
+
+			&.item-team::before {
+				width: 65px;
+				height: 65px;
+				background: url('../images/dest/icons/team_colored.svg');
+				background-size: 65px 65px;
+			}
+		}
+
+		&__title {
+			font-family: 'Oswald';
+			font-weight: 500;
+			font-size: 30px;
+			color: $color_39;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-family: 'OpenSans';
+			font-weight: 400;
+			font-size: 16px;
+			color: $color_39;
+		}
+	}
+
+}
