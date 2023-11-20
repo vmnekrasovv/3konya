@@ -1,0 +1,107 @@
+.choose-tour-container {
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	left: 0;
+	bottom: 130px;
+}
+
+.choose-tour {
+	max-width: 1170px;
+	height: 100%;
+	padding: 50px 30px 48px;
+	display: flex;
+	justify-content: space-between;
+	gap: 60px;
+	margin: 0 auto;
+	background: #fff;
+	border-radius: 50px;
+	box-shadow: 0 0 35px -10px #c0ced3;
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		gap: 70px;
+		flex-basis: 800px;
+		max-width: 800px;
+	}
+
+	&__item {
+		width: calc(33% - 30px);
+		display: flex;
+		align-items: flex-end;
+		position: relative;
+		padding-left: 40px;
+		padding-bottom: 3px;
+		border-bottom: 1px solid #dfdfdf;
+		font-family: 'Oswald';
+		font-weight: 500;
+		font-size: 18px;
+		color: $color_39;
+		cursor: pointer;
+
+		&:before {
+			display: block;
+			content: '';
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+		}
+
+		&:after {
+			display: block;
+			content: '';
+			width: 13px;
+			height: 7px;
+			position: absolute;
+			bottom: 10px;
+			right: 0;
+			background: url('../images/dest/icons/deg.svg');
+			background-size: 13px 7px;
+		}
+
+		&.item-when {
+			&:before {
+				width: 26px;
+				height: 24px;
+				background: url('../images/dest/icons/calendar_colored.svg');
+				background-size: 26px 24px;
+			}
+		}
+
+		&.item-where {
+			&:before {
+				width: 22px;
+				height: 24px;
+				background: url('../images/dest/icons/district_colored.svg');
+				background-size: 22px 24px;
+			}
+		}
+
+		&.item-type {
+			&:before {
+				width: 32px;
+				height: 26px;
+				background: url('../images/dest/icons/mountains_colored.svg');
+				background-size: 32px 26px;
+			}
+		}
+	}
+
+	&__button {
+		width: 100%;
+		max-width: 250px;
+		padding: 10px 20px 14px;
+		border-radius: 27px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $color_fd;
+		font-family: 'Oswald';
+		font-weight: 500;
+		font-size: 24px;
+		color: $color_39;
+		box-shadow: 0 5px 15px -3px $color_fd;
+		cursor: pointer;
+	}
+}

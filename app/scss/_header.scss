@@ -1,7 +1,7 @@
-
 .header {
+	position: relative;
 	min-height: 1017px;
-	background: url('../images/dest/header_bg.jpg') center no-repeat;
+	background: url('../images/dest/header_bg_ps.jpg') center no-repeat;
 
 	&__content {
 		margin-top: 50px;
@@ -40,7 +40,7 @@
 
 @import 'navbar';
 
-.header-menu {
+/* .header-menu {
 
 	&.active {
 		top: 0;
@@ -95,4 +95,4 @@
 			color: #C9A96E;
 		}
 	}
-}
+} */
