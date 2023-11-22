@@ -38,7 +38,7 @@
 	.about-list {
 		width: 100%;
 		margin-top: 50px;
-		margin-bottom: 80px;
+		margin-bottom: 20px;
 		display: flex;
 		gap: 50px;
 		justify-content: space-between;
@@ -66,9 +66,9 @@
 
 			&.item-map::before {
 				width: 63px;
-				height: 65px;
+				height: 63px;
 				background: url('../images/dest/icons/map_colored.svg');
-				background-size: 63px 65px;
+				background-size: 63px 63px;
 			}
 
 			&.item-travel-money::before {
@@ -91,7 +91,7 @@
 			font-weight: 500;
 			font-size: 30px;
 			color: $color_39;
-			margin-bottom: 20px;
+			margin-bottom: 10px;
 		}
 
 		&__text {
@@ -99,6 +99,7 @@
 			font-weight: 400;
 			font-size: 16px;
 			color: $color_39;
+			line-height: 170%;
 		}
 	}
 

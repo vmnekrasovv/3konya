@@ -1,0 +1,168 @@
+.section-hikes {
+	padding-top: 170px;
+	position: relative;
+	min-height: 1171px;
+	background: url('../images/dest/section_hikes_bg.jpg') center no-repeat;
+
+	.section__title {
+		z-index: 2;
+	}
+
+	.section__title::before {
+		width: 200%;
+		content: 'Наши походы';
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+
+	.section__left {
+		max-width: 555px;
+	}
+
+	.section__right {
+		max-width: 555px;
+	}
+
+	.section__button {
+		width: 370px;
+	}
+
+	.hikes-list {
+		position: relative;
+		margin-top: 60px;
+		display: flex;
+		gap: 60px;
+		justify-content: space-between;
+	}
+
+	.hikes-item {
+		width: 350px;
+
+		&__content {
+			padding: 25px 30px 30px 30px;
+			background: #fff;
+			border-radius: 0 0 50px 50px;
+		}
+
+		&__img {
+			display: block;
+			width: 350px;
+			height: 230px;
+		}
+
+		&__title {
+			height: 100px;
+			font-family: 'Oswald';
+			font-size: 22px;
+			font-weight: 500;
+			line-height: 30px;
+			color: $color_39;
+			margin-bottom: 20px;
+		}
+
+		&__meta {
+			margin-bottom: 20px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			&-item {
+				position: relative;
+				padding-left: 10px;
+				width: 60%;
+				font-family: 'OpenSans';
+				font-weight: 500;
+				font-size: 13px;
+				color: $color_39;
+				margin-bottom: 5px;
+
+				&:before {
+					width: 4px;
+					height: 4px;
+					display: block;
+					content: '';
+					border-radius: 50%;
+					position: absolute;
+					top: calc(50% - 1px);
+					left: 0;
+					background: $color_51;
+
+				}
+
+				&:nth-child(2),
+				&:nth-child(4) {
+					width: 40%;
+				}
+			}
+		} // meta
+
+		&__bottom {
+			display: flex;
+			justify-content: flex-start;
+		}
+
+		&__price {
+			width: 180px;
+			display: flex;
+			gap: 20px;
+			justify-content: flex-start;
+			align-items: flex-end;
+		}
+
+		&__current-price {
+			font-family: 'Oswald';
+			font-weight: 500;
+			font-size: 24px;
+			color: $color_38;
+
+			span {
+				font-family: 'PTSans';
+				font-weight: 400;
+				font-size: 26px;
+				color: $color_39;
+			}
+		} // current-price
+
+		&__old-price {
+			position: relative;
+			font-family: 'Oswald';
+			font-weight: 500;
+			font-size: 18px;
+			color: #999;
+			padding: 0 5px 2px;
+
+			span {
+				font-family: 'PTSans';
+				font-weight: 400;
+			}
+
+			&:before {
+				display: block;
+				content: '';
+				width: 100%;
+				height: 1px;
+				background: #999;
+				position: absolute;
+				top: 48%;
+				left: 0;
+			}
+
+		} // old-price
+
+		&__when {
+			font-family: 'OpenSans';
+			font-weight: 500;
+			font-size: 13px;
+			color: $color_38;
+			align-self: flex-end;
+			padding-bottom: 5px;
+		}
+
+	} // hikes-item
+
+} // section-hikes

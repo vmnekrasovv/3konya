@@ -88,20 +88,7 @@
 		}
 	}
 
-	&__button {
-		width: 100%;
+	.section__button {
 		max-width: 250px;
-		padding: 10px 20px 14px;
-		border-radius: 27px;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		background: $color_fd;
-		font-family: 'Oswald';
-		font-weight: 500;
-		font-size: 24px;
-		color: $color_39;
-		box-shadow: 0 5px 15px -3px $color_fd;
-		cursor: pointer;
 	}
 }

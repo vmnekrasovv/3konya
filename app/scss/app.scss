@@ -71,6 +71,22 @@ body.lock {
 	}
 }
 
+.section__button {
+	width: 100%;
+	padding: 10px 20px 14px;
+	border-radius: 27px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $color_fd;
+	font-family: 'Oswald';
+	font-weight: 500;
+	font-size: 24px;
+	color: $color_39;
+	box-shadow: 0 5px 15px -3px $color_fd;
+	text-decoration: none;
+}
+
 @import 'scrollbar';
 
 @import 'fonts';
@@ -82,3 +98,4 @@ body.lock {
 @import 'choose_tour';
 
 @import 'section_about';
+@import 'section_hikes';
