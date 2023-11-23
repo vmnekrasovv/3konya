@@ -1,0 +1,73 @@
+.section-travel {
+
+	.section__title:before {
+		top: -30px;
+		content: 'путешествия';
+	}
+
+	.section__title {
+		z-index: 2;
+	}
+
+	.container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;	
+	}
+
+
+	.section__left {
+		max-width: calc(100% - 370px);
+	}
+
+	.section__right {
+		align-self: flex-end;
+		max-width: 370px;
+	}
+
+	.section__button {
+		width: 370px;
+		margin-bottom: 10px;
+	}
+
+	.travel-list {
+		width: 100%;
+		position: relative;
+		margin-top: 60px;
+		margin-bottom: 120px;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 60px;
+		justify-content: space-between;
+	}
+
+	.travel-item {
+		display: block;
+		text-decoration: none;
+		width: 350px;
+		height: 250px;
+		border-radius: 50px;
+		position: relative;
+
+		&__img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			border-radius: 50px;
+		}
+
+		&__title {
+			position: absolute;
+			left: 0;
+			bottom: 30px;
+			width: 100%;
+			height: 30px;
+			font-family: 'Oswald';
+			font-weight: 500;
+			font-size: 30px;
+			color: #fff;
+			text-align: center;
+		}
+	}
+
+}
