@@ -1,0 +1,21 @@
+.footer {
+	padding: 40px 0;
+	background-color: #393939;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__left {
+		font-family: 'OpenSans';
+		font-size: 14px;
+		color: #fcfdfe;
+	}
+
+	&__right {
+		font-family: 'OpenSans';
+		font-size: 14px;
+		color: #fcfdfe;
+	}
+}
