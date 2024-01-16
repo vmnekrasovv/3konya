@@ -34,6 +34,10 @@ body.lock {
 	will-change: transform;
 } */
 
+.page {
+	min-width: 1920px;
+}
+
 .container {
 	max-width: 1200px;
 	padding: 0 15px;
